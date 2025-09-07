@@ -1,0 +1,40 @@
+# Swift & Xcode
+.DS_Store
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xcscmblueprint
+
+# Objective-C
+*.moved-aside
+*.xcuserstate
+
+# General
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Python (nếu bạn dùng cho automation/script)
+__pycache__/
+*.py[cod]
+*.so
+
+# macOS
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Others
+*.ipa
+*.zip
+*.tar
+*.tar.gz
