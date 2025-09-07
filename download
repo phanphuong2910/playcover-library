@@ -1,1 +1,30 @@
+https://github.com/phanphuong2910/playcover-library/releases/download/v1.0.3/muffin.ipa.part_aa
 
+https://github.com/phanphuong2910/playcover-library/releases/download/v1.0.3/muffin.ipa.part_ab
+
+...
+
+#!/bin/bash
+# Script này sẽ tải tất cả các phần của file game từ danh sách link
+
+...
+
+while read url; do
+  echo "Đang tải $url ..."
+  curl -LO "$url"
+done < download_links.txt
+
+echo "Tất cả các part đã được tải xong!"
+
+chmod +x download_game_parts.sh
+./download_game_parts.sh
+
+...
+
+#!/bin/bash
+# Script này sẽ ghép các part thành file game hoàn chỉnh
+cat muffin.ipa.part_* > muffin.ipa
+echo "Đã ghép xong thành muffin.ipa"
+
+chmod +x join_parts.sh
+./join_parts.sh
